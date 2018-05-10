@@ -1,0 +1,98 @@
+
+<!-- Header -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button"
+                    class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a  href="#/moviedefault" class="navbar-brand" rel="home" >
+                <img class="logo_film"
+                     src="../../../img/movie_time_logo.jpg">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#/adminconsole">Admin</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End of Header-->
+
+<!--Body-->
+<div class="container-fluid pushdown">
+    <div class="container-fluid">
+        <!-- Search Box -->
+        <div class="input-group">
+            <input ng-model = "model.movieName"
+                   type="text"
+                   placeholder="enter movie name.. Eg: Inception"
+                   class="form-control ng-pristine ng-valid ng-touched">
+               <span class="input-group-btn ">
+                   <a href ="#/search/{{model.movieName}}"
+                      class="btn btn-info makegray"
+                      type="button">
+                       <span class="glyphicon glyphicon-search"></span>
+                   </a>
+                </span>
+        </div>
+
+<div class="container container-fluid pushdown">
+<div class="container">
+    <a class="btn btn-success btn-block makeblue"
+       href="#/manageflaggedreviews">Manage Flagged Reviews
+    </a>
+</div>
+    <p></p>
+<div class="container">
+    <a class="btn btn-success btn-block makeblue"
+       href="#/manageusers">Manage Users
+    </a>
+</div>
+    <p></p>
+
+<p></p>
+<div class="container">
+    <a class="btn btn-success btn-block makeblue"
+       href="#/managemovies">Manage Ratings and Reviews
+    </a>
+</div>
+</div>
+</div>
+
+
+<!-- Footer -->
+<nav class="navbar navbar-inverse navbar-fixed-bottom">
+    <div class="container-fluid">
+        <p class="navbar-text pull-right">
+            <a
+               ng-click="model.logout()">
+                <span>Logout</span>
+            </a>
+
+        </p>
+        <p class="navbar-text pull-left">
+
+            <a  href="#/profile">
+                <span>Back to Profile</span>
+            </a>
+        </p>
+
+    </div>
+</nav>
+
+
+
+
+
